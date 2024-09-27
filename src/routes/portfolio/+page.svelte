@@ -3,5 +3,10 @@
     
     export let data: PageData;
 </script>
-<h1>Portfolio Page</h1>
-<p>Welcome to the portfolio page.</p>
+
+<div class="relative min-h-screen">
+  <div class="relative z-10">
+    <h1>Portfolio Page</h1>
+    <p>Welcome to the portfolio page.</p>
+  </div>
+</div>

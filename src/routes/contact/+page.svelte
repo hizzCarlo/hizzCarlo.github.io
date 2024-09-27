@@ -4,5 +4,9 @@
     export let data: PageData;
 </script>
 
-  <h1>Contact Page</h1>
-  <p>Welcome to the contact page.</p>
+<div class="relative min-h-screen">
+  <div class="relative z-10">
+    <h1>Contact Page</h1>
+    <p>Welcome to the contact page.</p>
+  </div>
+</div>
