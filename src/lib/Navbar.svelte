@@ -1,34 +1,58 @@
 <script>
     export let activePage = '';
-  </script>
-  
-  <nav>
+</script>
+
+<nav>
     <ul>
-      <li class={activePage === 'home' ? 'active' : ''}><a href="/">Home</a></li>
-      <li class={activePage === 'about' ? 'active' : ''}><a href="/about">About</a></li>
-      <li class={activePage === 'contact' ? 'active' : ''}><a href="/contact">Contact</a></li>
-      <li class={activePage === 'portfolio' ? 'active' : ''}><a href="/portfolio">Portfolio</a></li>
+        <li class={activePage === 'home' ? 'active' : ''}><a href="/">Home</a></li>
+        <li class={activePage === 'about' ? 'active' : ''}><a href="/about">About</a></li>
+        <li class={activePage === 'contact' ? 'active' : ''}><a href="/contact">Contact</a></li>
+        <li class={activePage === 'portfolio' ? 'active' : ''}><a href="/portfolio">Portfolio</a></li>
     </ul>
-  </nav>
-  
-  <style>
+</nav>
+
+<!-- New box at the bottom of the screen -->
+<div class="bottom-box">
+    
+</div>
+
+<style>
     nav {
-      background-color: #333;
-      padding: 1rem;
+        background-color: transparent;
+        padding: 1rem;
+        display: flex;
+        font-family: Arial, sans-serif;
+        justify-content: center; /* Center the content */
+        z-index: 3; /* Set z-index to 3 */
+        position: relative; /* Ensure it is positioned above other elements */
     }
     ul {
-      list-style: none;
-      display: flex;
-      gap: 1rem;
+        list-style: none;
+        display: flex;
+        gap: 1rem;
     }
     li {
-      color: white;
+        color: rgb(255, 255, 255);
     }
     li.active a {
-      font-weight: bold;
+        color: #bd971b;
+        font-weight: bold;
+        text-decoration: underline; /* Add underline for active tab */
     }
     a {
-      color: white;
-      text-decoration: none;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
     }
-  </style>
+    .bottom-box {
+        position: fixed;
+        bottom: 0;
+        left: 0; /* Ensure it starts from the left edge */
+        height: 20vh;
+        width: 100%;
+        background-color: #fefefe;
+        text-align: center;
+        padding: 1rem;
+        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        z-index: -1; /* Lower z-index */
+    }
+</style>

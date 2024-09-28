@@ -1,12 +1,95 @@
 <script lang="ts">
-    import type { PageData } from './$types';
-    
-    export let data: PageData;
+  // You can add any necessary imports here
 </script>
 
-<div class="relative min-h-screen">
-  <div class="relative z-10">
-    <h1>About Page</h1>
-    <p>Welcome to the about page.</p>
+<div class="container">
+  <div class="about-page">
+    <div class="content-box">
+      <main class="main-content">
+        <div class="intro">
+          <h2>Hello, Welcome</h2>
+          <h1>I am Hizola, John Carlo</h1>
+          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+          
+        </div>
+        <div class="image-container">
+          <div class="image-background">
+            <img src="/pic2.png" alt="John Carlo">
+          </div>
+        </div>
+      </main>
+    </div>
   </div>
 </div>
+
+<style>
+  @import '../../styles/custom.css';
+  .about-page {
+    background-color: transparent;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+  }
+  .content-box {
+    background-color: rgb(255, 255, 255);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 990px;
+    width: 100%;
+   
+  }
+  .main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .intro {
+    max-width: 50%;
+  }
+  .intro h2 {
+    color: #bd971b;
+  }
+  .intro h1 {
+    font-size: 3rem;
+    margin: 1rem 0;
+  }
+  .intro p {
+    margin: 1rem 0;
+  }
+  
+  .image-container {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-color: #bd971baa;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 20%;
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 50%;
+  }
+  .image-background {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-color: #bd971b3a;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 20%;
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 50%;
+    z-index: 3;
+    position: relative;
+    display: flex;
+    overflow: hidden; /* Hide overflow */
+    justify-content: center;
+    align-items: center;
+  }
+  .image-background img {
+    border-radius: 60px;
+    max-width: 80%;
+  }
+  
+  
+</style>
