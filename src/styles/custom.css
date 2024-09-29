@@ -82,3 +82,18 @@ body {
   .star::after {
     transform: rotate(-45deg);
   }
+  
+  /* Common container styles */
+.common-container {
+  max-width: 70%;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.348);
+  padding: 2rem;
+  top: 4.5rem;
+  border-radius: 8px;
+  z-index: 2;
+  position: relative;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  font-family: Arial, sans-serif;
+  margin-bottom: 1rem; /* Add margin to separate the containers */
+}

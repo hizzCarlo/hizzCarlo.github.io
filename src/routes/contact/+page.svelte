@@ -71,6 +71,7 @@
     margin: 0 auto;
     background-color: white;
     padding: 1rem;
+    top: 4.5rem;
     border-radius: 8px;
     z-index: 4;
     position: relative;

@@ -11,25 +11,27 @@
     </ul>
 </nav>
 
-
-<div class="bottom-box">
-    
-</div>
+<div class="bottom-box"></div>
 
 <style>
     nav {
-        background-color: transparent;
+        background-color: #0000008c;
         padding: 1rem;
         display: flex;
         font-family: Arial, sans-serif;
         justify-content: center; 
         z-index: 3; 
-        position: relative; 
+        position: fixed; /* Make the navbar fixed */
+        top: 0; /* Position it at the top */
+        width: 100%; /* Ensure it spans the full width */
+        box-sizing: border-box; /* Include padding in the element's total width and height */
     }
     ul {
         list-style: none;
         display: flex;
         gap: 1rem;
+        padding: 0;
+        margin: 0;
     }
     li {
         color: rgb(255, 255, 255);

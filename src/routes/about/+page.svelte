@@ -36,9 +36,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    
     background-color: #00000000;
     color: #fff;
+    padding-top: 60px; /* Add padding to avoid overlap with navbar */
+    box-sizing: border-box;
   }
   .content {
     display: flex;
@@ -99,6 +101,6 @@
   }
   h1 {
     font-weight: bolder;
-    font-size:xx-large;
+    font-size: xx-large;
   }
 </style>

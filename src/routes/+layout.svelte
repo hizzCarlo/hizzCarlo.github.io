@@ -34,8 +34,9 @@
 <style>
   .content {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 90vh; /* Ensure it takes full viewport height */
+    min-height: 80vh; /* Ensure it takes full viewport height */
   }
 </style>

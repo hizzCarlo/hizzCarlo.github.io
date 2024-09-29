@@ -27,7 +27,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Ensure it takes full viewport height */
+    height: 90vh; /* Ensure it takes full viewport height */
   }
   .about-page {
     background-color: transparent;
