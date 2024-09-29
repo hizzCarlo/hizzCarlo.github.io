@@ -11,7 +11,7 @@
     </ul>
 </nav>
 
-<!-- New box at the bottom of the screen -->
+
 <div class="bottom-box">
     
 </div>
@@ -22,9 +22,9 @@
         padding: 1rem;
         display: flex;
         font-family: Arial, sans-serif;
-        justify-content: center; /* Center the content */
-        z-index: 3; /* Set z-index to 3 */
-        position: relative; /* Ensure it is positioned above other elements */
+        justify-content: center; 
+        z-index: 3; 
+        position: relative; 
     }
     ul {
         list-style: none;
@@ -37,7 +37,7 @@
     li.active a {
         color: #bd971b;
         font-weight: bold;
-        text-decoration: underline; /* Add underline for active tab */
+        text-decoration: underline; 
     }
     a {
         color: rgb(255, 255, 255);
@@ -46,13 +46,13 @@
     .bottom-box {
         position: fixed;
         bottom: 0;
-        left: 0; /* Ensure it starts from the left edge */
+        left: 0; 
         height: 20vh;
         width: 100%;
         background-color: #fefefe;
         text-align: center;
         padding: 1rem;
         box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-        z-index: -1; /* Lower z-index */
+        z-index: -1; 
     }
 </style>

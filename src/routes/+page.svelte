@@ -1,5 +1,3 @@
-
-
 <script lang="ts">
   // You can add any necessary imports here
 </script>
@@ -12,7 +10,6 @@
           <h2>Hello, Welcome</h2>
           <h1>I am Hizola, John Carlo</h1>
           <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-          
         </div>
         <div class="image-container">
           <div class="image-background">
@@ -26,6 +23,12 @@
 
 <style>
   @import '../styles/custom.css';
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ensure it takes full viewport height */
+  }
   .about-page {
     background-color: transparent;
     color: #333;
@@ -41,7 +44,6 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 990px;
     width: 100%;
-   
   }
   .main-content {
     display: flex;

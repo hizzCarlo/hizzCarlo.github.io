@@ -69,7 +69,6 @@
     font-family: Arial, sans-serif;
     max-width: 800px;
     margin: 0 auto;
-    top: 1rem;
     background-color: white;
     padding: 1rem;
     border-radius: 8px;
@@ -98,6 +97,11 @@
   .contact-item i {
     font-size: 2rem;
     color: #000000f9;
+    transition: transform 0.3s ease, color 0.3s ease; /* Add transition for smooth effect */
+  }
+  .contact-item i:hover {
+    transform: scale(1.2); /* Make the icon bigger */
+    color: #bd971bf9; /* Change the color */
   }
   .contact-item p {
     margin: 0.5rem 0;

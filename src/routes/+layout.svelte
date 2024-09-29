@@ -27,4 +27,15 @@
     {/each}
 </div>
 
-<slot />
+<div class="content">
+    <slot />
+</div>
+
+<style>
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh; /* Ensure it takes full viewport height */
+  }
+</style>
