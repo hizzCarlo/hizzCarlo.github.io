@@ -1,95 +1,87 @@
 <script lang="ts">
-  // You can add any necessary imports here
+  import type { PageData } from './$types';
+  
+  export let data: PageData;
 </script>
 
 <div class="container">
-  <div class="about-page">
-    <div class="content-box">
-      <main class="main-content">
-        <div class="intro">
-          <h2>Hello, Welcome</h2>
-          <h1>I am Hizola, John Carlo</h1>
-          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-          
-        </div>
-        <div class="image-container">
-          <div class="image-background">
-            <img src="/pic2.png" alt="John Carlo">
-          </div>
-        </div>
-      </main>
+  <div class="content">
+    <div class="image">
+      <img src="/pf.png" alt="Profile Image">
+      <ul class="image-details">
+        <li><strong>Name:</strong> John Carlo A. Hizola</li>
+        <li><strong>Date of birth:</strong> October, 31 2004</li>
+        <li><strong>Zip code:</strong> 2110</li>
+        <li><strong>Nationality:</strong> Filipino</li>
+      </ul>
+    </div>
+    <div class="details">
+      <h1>About Me</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
     </div>
   </div>
 </div>
 
 <style>
-  @import '../../styles/custom.css';
-  .about-page {
-    background-color: transparent;
-    color: #333;
+  .container {
+    font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 80vh;
+    background-color: #00000000;
+    color: #fff;
   }
-  .content-box {
-    background-color: rgb(255, 255, 255);
+  .content {
+    display: flex;
+    background-color: #1a1a1a;
     padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 990px;
-    width: 100%;
-   
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
-  .main-content {
+  .image {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
+    margin-right: 2rem;
   }
-  .intro {
-    max-width: 50%;
+  .image img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
   }
-  .intro h2 {
-    color: #bd971b;
+  .image-details {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+    text-align: left;
   }
-  .intro h1 {
-    font-size: 3rem;
-    margin: 1rem 0;
+  .image-details li {
+    margin-bottom: 0.5rem;
   }
-  .intro p {
-    margin: 1rem 0;
+  .details {
+    max-width: 700px;
   }
-  
-  .image-container {
-    position: relative;
-    width: 400px;
-    height: 400px;
-    background-color: #bd971baa;
-    border-top-left-radius: 50%;
-    border-top-right-radius: 20%;
-    border-bottom-left-radius: 20%;
-    border-bottom-right-radius: 50%;
+  .details h1 {
+    margin-bottom: 1rem;
   }
-  .image-background {
-    position: relative;
-    width: 400px;
-    height: 400px;
-    background-color: #bd971b3a;
-    border-top-left-radius: 50%;
-    border-top-right-radius: 20%;
-    border-bottom-left-radius: 20%;
-    border-bottom-right-radius: 50%;
-    z-index: 3;
-    position: relative;
-    display: flex;
-    overflow: hidden; /* Hide overflow */
-    justify-content: center;
-    align-items: center;
+  .details ul {
+    list-style: none;
+    padding: 0;
   }
-  .image-background img {
-    border-radius: 60px;
-    max-width: 80%;
+  .details ul li {
+    margin-bottom: 0.5rem;
   }
-  
-  
+  .download-cv {
+    background-color: #ffcc00;
+    color: #000;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
 </style>

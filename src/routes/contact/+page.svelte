@@ -1,30 +1,142 @@
 <script lang="ts">
   import type { PageData } from './$types';
-  
   export let data: PageData;
+  import '@fortawesome/fontawesome-free/css/all.min.css';
+  import 'flowbite/dist/flowbite.css';
 </script>
 
 <div class="container">
   <div class="relative z-10">
-    <h1>Contact Page</h1>
-    <p>Welcome to the contact page.</p>
-    <p>Contact Information:</p>
-    <ul>
-      <li><a href="https://github.com/yourusername" target="_blank">GitHub</a></li>
-      <li><a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a></li>
-      <li><a href="https://facebook.com/yourusername" target="_blank">Facebook</a></li>
-    </ul>
-    <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+    <div class="image-container">
+      <div class="image-background">
+        <img src="/pic2.png" alt="John Carlo">
+      </div>
+    </div>
+      
+    <div class="contact-container">
+      <h1>Contact <span>Me.</span></h1>
+      <p>Get in touch to get the ball rolling</p>
+      <div class="contact-info">
+        <div class="contact-item">
+          <a href="https://mail.google.com/mail/u/0/?hl=en-GB#inbox" class="btn btn-primary">
+            <i class="fas fa-envelope"></i>
+            <p>EMAIL</p>
+            <span>202211255@gordoncollege.edu.ph</span>
+          </a>
+        </div>
+        <div class="contact-item">
+          <a href="tel: +639673606059" class="btn btn-primary">
+            <i class="fas fa-phone"></i>
+            <p>PHONE</p>
+            <span>+63 (0) 9673 606059</span>
+          </a>
+        </div>
+        <div class="contact-item">
+          <a href="https://www.facebook.com/johncarlo.hizola.9/" class="btn btn-primary">
+            <i class="fa-brands fa-facebook"></i>
+            <p>FACEBOOK</p>
+            <span>Johncarlo Hizola</span>
+          </a>
+        </div>
+        <div class="contact-item">
+          <a href="https://x.com/JohnHizola70295" class="btn btn-primary">
+            <i class="fa-brands fa-twitter"></i>
+            <p>TWITTER</p>
+            <span>John Carlo Hizola</span>
+          </a>
+        </div>
+        <div class="contact-item">
+          <a href="https://github.com/hizzCarlo" class="btn btn-primary">
+            <i class="fa-brands fa-github"></i>
+            <p>GITHUB</p>
+            <span>Hizola, John Carlo</span>
+          </a>
+        </div>
+        <div class="contact-item">
+          <a href="https://www.instagram.com/jc.hiz/" class="btn btn-primary">
+            <i class="fa-brands fa-square-instagram"></i>
+            <p>INSTAGRAM</p>
+            <span>jc.hiz</span>
+          </a>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
 <style>
   .container {
+    font-family: Arial, sans-serif;
     max-width: 800px;
     margin: 0 auto;
+    top: 1rem;
     background-color: white;
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 8px;
+    z-index: 4;
+    position: relative;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .content {
+    position: relative;
+    z-index: 2;
+  }
+  .contact-container {
+    text-align: center;
+    padding: 1rem;
+  }
+  .contact-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  .contact-item {
+    text-align: center;
+    padding: .5rem;
+  }
+  .contact-item i {
+    font-size: 2rem;
+    color: #000000f9;
+  }
+  .contact-item p {
+    margin: 0.5rem 0;
+    color: #bd971bf9;
+  }
+  .contact-item a {
+    color: #000;
+    text-decoration: none;
+  }
+  .image-container {
+    display: flex;
+    justify-content: center; /* Center the image container */
+    margin-bottom: 1rem; /* Add some space below the image */
+  }
+  .image-background {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background-color: #bd971bf9;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 20%;
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 50%;
+    z-index: 3;
+    display: flex;
+    overflow: hidden; /* Hide overflow */
+    justify-content: center;
+    align-items: center;
+  }
+  .image-background img {
+    border-radius: 60px;
+    max-width: 80%;
+  }
+  h1 span {
+    color: #bd971bf9;
+    font-weight: bolder;
+  }
+  h1 {
+    font-weight: bolder;
+    font-size: larger;
   }
 </style>
