@@ -122,10 +122,10 @@
     width: 250px;
     height: 250px;
     background-color: #bd971bf9;
-    border-top-left-radius: 50%;
-    border-top-right-radius: 20%;
-    border-bottom-left-radius: 20%;
-    border-bottom-right-radius: 50%;
+    border-top-left-radius: 80%;
+    border-top-right-radius: 200%;
+    border-bottom-left-radius: 90%;
+    border-bottom-right-radius: 100%;
     z-index: 3;
     display: flex;
     overflow: hidden; /* Hide overflow */

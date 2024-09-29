@@ -189,7 +189,7 @@
   }
 
   .container1::-webkit-scrollbar-thumb:hover {
-    background-color: darkorange; /* Change color when hovered */
+    background-color: rgb(255, 221, 0); /* Change color when hovered */
     height: 12px; /* Make the scrollbar thumb bigger when hovered */
   }
 
@@ -280,7 +280,7 @@
     position: absolute;
     top: 10px;
     right: 10px;
-    background-color: #ff0000;
+    background-color: #d31e1e;
     color: #fff;
     border: none;
     border-radius: 50%;

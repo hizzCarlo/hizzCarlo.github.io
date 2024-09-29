@@ -9,7 +9,8 @@
         <div class="intro">
           <h2>Hello, Welcome</h2>
           <h1>I am Hizola, John Carlo</h1>
-          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+          <p>
+            A student at Gordon College in the Computer Studies Department. and I’m currently taking a course on Bachelor of Science in Computer Science</p>
         </div>
         <div class="image-container">
           <div class="image-background">
@@ -27,6 +28,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: Arial, sans-serif;
     height: 90vh; /* Ensure it takes full viewport height */
   }
   .about-page {
@@ -55,9 +57,10 @@
   }
   .intro h2 {
     color: #bd971b;
+    font-size: xx-large;
   }
   .intro h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin: 1rem 0;
   }
   .intro p {
@@ -66,9 +69,9 @@
   
   .image-container {
     position: relative;
-    width: 400px;
-    height: 400px;
-    background-color: #bd971baa;
+    width: 380px;
+    height: 390px;
+    background-color: #bda21baa;
     border-top-left-radius: 50%;
     border-top-right-radius: 20%;
     border-bottom-left-radius: 20%;
