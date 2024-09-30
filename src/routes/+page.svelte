@@ -97,4 +97,33 @@
     border-radius: 60px;
     max-width: 80%;
   }
+  
+  @media (max-width: 800px) {
+    .main-content {
+      flex-direction: column;
+    }
+    .intro {
+      max-width: 100%;
+      text-align: center;
+    }
+    .image-container {
+      width: 300px;
+      height: 310px;
+    }
+    .image-background {
+      width: 320px;
+      height: 320px;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .image-container {
+      width: 250px;
+      height: 260px;
+    }
+    .image-background {
+      width: 270px;
+      height: 270px;
+    }
+  }
 </style>

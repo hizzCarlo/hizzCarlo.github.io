@@ -5,8 +5,8 @@
 </script>
 
 <div class="container">
-  <div class="content">
-    <div class="image">
+  <div class="content grid-container">
+    <div class="image grid-item">
       <img src="/pf.png" alt="Profile Image">
       <ul class="image-details">
         <li><span>Name:</span> John Carlo A. Hizola</li>
@@ -15,7 +15,7 @@
         <li><span>Nationality:</span> Filipino</li>
       </ul>
     </div>
-    <div class="details">
+    <div class="details grid-item">
       <h1>About <span>Me</span></h1>
       <p>Hi! I’m John Carlo, a 3rd-year Computer Science student at Gordon College. As someone passionate about technology, I’ve been fortunate enough to explore various aspects of software and web development while continuing to learn, especially in the field of Natural Language Processing (NLP). My journey as a student developer has been both challenging and rewarding, giving me the opportunity to turn my ideas into meaningful projects.</p>
       <br>
@@ -36,14 +36,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
     background-color: #00000000;
     color: #fff;
     padding-top: 60px; /* Add padding to avoid overlap with navbar */
     box-sizing: border-box;
   }
   .content {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
     background-color: #1a1a1a;
     padding: 2rem;
     border-radius: 8px;

@@ -91,6 +91,19 @@
     gap: 1rem;
     margin-top: 2rem;
   }
+
+  @media (max-width: 800px) {
+    .contact-info {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 500px) {
+    .contact-info {
+      grid-template-columns: 1fr;
+    }
+  }
+
   .contact-item {
     text-align: center;
     padding: .5rem;

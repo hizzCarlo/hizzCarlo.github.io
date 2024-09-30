@@ -229,6 +229,7 @@
   }
   .work-item p {
     font-size: 0.7rem;
+    color: #000000; /* Change text color to black */
   }
   .work-item a {
     display: block;
@@ -291,5 +292,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .content {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    gap: 1rem; /* Optional: Add some space between items */
+  }
+
+  .content > * {
+    flex: 1 1 100%; /* Make each item take full width when wrapping */
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+  }
+
+  /* Media query to switch to single column layout on smaller screens */
+  @media (max-width: 600px) {
+    .gallery {
+      grid-template-columns: 1fr;
+    }
   }
 </style>
