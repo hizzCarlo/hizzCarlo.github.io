@@ -3,7 +3,7 @@
   
   export let data: PageData;
 </script>
-
+<!-- ABout Page -->
 <div class="container">
   <div class="content grid-container">
     <div class="image grid-item">
@@ -38,7 +38,7 @@
     align-items: center;
     background-color: #00000000;
     color: #fff;
-    padding-top: 60px; /* Add padding to avoid overlap with navbar */
+    padding-top: 60px; /* padding to avoid overlap with navbar */
     box-sizing: border-box;
   }
   .content {

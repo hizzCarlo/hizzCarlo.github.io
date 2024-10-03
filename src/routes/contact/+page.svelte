@@ -4,7 +4,7 @@
   import '@fortawesome/fontawesome-free/css/all.min.css';
   import 'flowbite/dist/flowbite.css';
 </script>
-
+<!-- contact page -->
 <div class="container">
   <div class="relative z-10">
     <div class="image-container">
@@ -16,7 +16,7 @@
     <div class="contact-container">
       <h1>Contact <span>Me.</span></h1>
       <p>Get in touch to get the ball rolling</p>
-      <div class="contact-info">
+      <div class="contact-info"><!-- clickable contacts -->
         <div class="contact-item">
           <a href="https://mail.google.com/mail/u/0/?hl=en-GB#inbox" class="btn btn-primary">
             <i class="fas fa-envelope"></i>
@@ -91,13 +91,13 @@
     gap: 1rem;
     margin-top: 2rem;
   }
-
+  /* for larger screen */
   @media (max-width: 800px) {
     .contact-info {
       grid-template-columns: repeat(2, 1fr);
     }
   }
-
+  /* for smaller screen */
   @media (max-width: 500px) {
     .contact-info {
       grid-template-columns: 1fr;
@@ -111,11 +111,11 @@
   .contact-item i {
     font-size: 2rem;
     color: #000000f9;
-    transition: transform 0.3s ease, color 0.3s ease; /* Add transition for smooth effect */
+    transition: transform 0.3s ease, color 0.3s ease; /* transition for smoother effect */
   }
   .contact-item i:hover {
-    transform: scale(1.2); /* Make the icon bigger */
-    color: #bd971bf9; /* Change the color */
+    transform: scale(1.2); /* make the icon bigger */
+    color: #bd971bf9; 
   }
   .contact-item p {
     margin: 0.5rem 0;
@@ -127,8 +127,8 @@
   }
   .image-container {
     display: flex;
-    justify-content: center; /* Center the image container */
-    margin-bottom: 1rem; /* Add some space below the image */
+    justify-content: center; 
+    margin-bottom: 1rem; 
   }
   .image-background {
     position: relative;
@@ -141,7 +141,7 @@
     border-bottom-right-radius: 100%;
     z-index: 3;
     display: flex;
-    overflow: hidden; /* Hide overflow */
+    overflow: hidden; 
     justify-content: center;
     align-items: center;
   }

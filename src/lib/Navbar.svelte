@@ -1,7 +1,7 @@
 <script>
-    export let activePage = '';
+    export let activePage = ''; // track the active page
 </script>
-
+ <!-- navbar -->
 <nav>
     <ul>
         <li class={activePage === 'home' ? 'active' : ''}><a href="/">Home</a></li>
@@ -21,10 +21,10 @@
         font-family: Arial, sans-serif;
         justify-content: center; 
         z-index: 3; 
-        position: fixed; /* Make the navbar fixed */
-        top: 0; /* Position it at the top */
-        width: 100%; /* Ensure it spans the full width */
-        box-sizing: border-box; /* Include padding in the element's total width and height */
+        position: fixed; 
+        top: 0;
+        width: 100%; 
+        box-sizing: border-box; 
     }
     ul {
         list-style: none;

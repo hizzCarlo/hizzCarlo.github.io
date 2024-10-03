@@ -4,7 +4,7 @@
     
     export let data: PageData;
     
-    // Example data for school works
+    // project data
     const schoolWorks = [
         { title: 'Navigation-Bar', description: 'A basic navigation bar using HTML and CSS', year: 2024 },
         { title: 'Basic-Calculator', description: 'A basic Calculator using HTML, CSS, and JS', year: 2024 },
@@ -16,7 +16,7 @@
         { title: 'basic-turtle-graphic', description: 'A simple turtle graphic using python', year: 2022 },
         { title: '3D-Letter--Rendering', description: '3d rendering Letter (H, P, R, T) using python', year: 2022 },
         { title: 'Fitness-web', description: 'fitness website using php', year: 2022 },
-        // Add more works as needed
+        
     ];
     
     let showPopup = false;
@@ -32,11 +32,12 @@
         selectedImage = '';
     }
 </script>
+<!-- portfolio page -->
 <div class="container">
   <h2>Other Projects</h2>
   <div class="container1">
     <div class="gallery1">
-
+<!-- other project containers -->
       <div class="gallery-item" on:click={() => openPopup('/web1.png')}>
         <img src="/web1.png" alt="Image 1">
       </div>
@@ -122,7 +123,7 @@
   </div>
   <div class="container2">
     <div class="relative z-10">
-      
+      <!-- clickablegithub project container -->
       <section>
         <h2>GitHub Projects</h2>
         <div class="gallery">
@@ -158,7 +159,7 @@
     position: relative;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
     font-family: Arial, sans-serif;
-    margin-bottom: 1rem; /* Add margin to separate the containers */
+    margin-bottom: 1rem; 
   }
   .container1 {
     overflow-x: auto;
@@ -173,7 +174,7 @@
   }
   /* Scrollbar styles */
   .container1::-webkit-scrollbar {
-    height: 8px; /* Adjust the height of the scrollbar */
+    height: 8px; 
   }
 
   .container1::-webkit-scrollbar-track {
@@ -181,16 +182,16 @@
   }
 
   .container1::-webkit-scrollbar-thumb {
-    background-color: rgba(255, 166, 0, 0.501); /* Orange color for the scrollbar thumb */
-    border-radius: 10px; /* Rounded corners for the scrollbar thumb */
-    border: 2px solid transparent; /* Add some space around the thumb */
-    background-clip: content-box; /* Clip the background to the content box */
-    transition: background-color 0.3s ease, height 0.3s ease; /* Smooth transition for the color and size */
+    background-color: rgba(255, 166, 0, 0.501); 
+    border-radius: 10px;
+    border: 2px solid transparent; 
+    background-clip: content-box; 
+    transition: background-color 0.3s ease, height 0.3s ease; 
   }
 
   .container1::-webkit-scrollbar-thumb:hover {
     background-color: rgb(255, 221, 0); /* Change color when hovered */
-    height: 12px; /* Make the scrollbar thumb bigger when hovered */
+    height: 12px; 
   }
 
   .gallery1 {
@@ -199,19 +200,19 @@
   } 
   .gallery-item {
     display: inline-block;
-    width: 200px; /* Set a fixed width for the images */
-    height: 200px; /* Set a fixed height for the images */
+    width: 200px; 
+    height: 200px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s;
-    margin-right: 1rem; /* Add some space between images */
-    overflow: hidden; /* Hide overflow */
-    cursor: pointer; /* Change cursor to pointer */
+    margin-right: 1rem; 
+    overflow: hidden; 
+    cursor: pointer; 
   }
   .gallery-item img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensure the image covers the container */
+    object-fit: cover; 
   }
   .gallery-item:hover {
     transform: scale(1.05);
@@ -229,7 +230,7 @@
   }
   .work-item p {
     font-size: 0.7rem;
-    color: #000000; /* Change text color to black */
+    color: #000000; 
   }
   .work-item a {
     display: block;
@@ -273,8 +274,8 @@
   }
   .popup-content img {
     max-width: 100%;
-    max-height: 80vh; /* Limit the height of the image */
-    object-fit: contain; /* Ensure the image maintains its aspect ratio */
+    max-height: 80vh; 
+    object-fit: contain; 
     border-radius: 8px;
   }
   .close-button {
@@ -295,16 +296,16 @@
   }
   .content {
     display: flex;
-    flex-wrap: wrap; /* Allow items to wrap to the next line */
-    gap: 1rem; /* Optional: Add some space between items */
+    flex-wrap: wrap; 
+    gap: 1rem; 
   }
 
   .content > * {
     flex: 1 1 100%; /* Make each item take full width when wrapping */
-    box-sizing: border-box; /* Ensure padding and border are included in the width */
+    box-sizing: border-box; 
   }
 
-  /* Media query to switch to single column layout on smaller screens */
+  /* for smaller screens */
   @media (max-width: 600px) {
     .gallery {
       grid-template-columns: 1fr;

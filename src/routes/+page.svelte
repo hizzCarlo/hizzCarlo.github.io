@@ -1,7 +1,6 @@
 <script lang="ts">
-  // You can add any necessary imports here
 </script>
-
+<!-- home page -->
 <div class="container">
   <div class="about-page">
     <div class="content-box">
@@ -23,13 +22,14 @@
 </div>
 
 <style>
-  @import '../styles/custom.css';
+  /* import custom style */
+  @import '../styles/custom.css'; 
   .container {
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: Arial, sans-serif;
-    height: 90vh; /* Ensure it takes full viewport height */
+    height: 90vh; 
   }
   .about-page {
     background-color: transparent;
@@ -89,7 +89,7 @@
     z-index: 3;
     position: relative;
     display: flex;
-    overflow: hidden; /* Hide overflow */
+    overflow: hidden; 
     justify-content: center;
     align-items: center;
   }
