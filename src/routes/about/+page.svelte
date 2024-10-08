@@ -10,14 +10,12 @@
       <img src="/pf.png" alt="Profile Image">
       <ul class="image-details">
         <li><span>Name:</span> John Carlo A. Hizola</li>
-        <li><span>Date of birth:</span> October, 31 2004</li>
-        <li><span>Zip code:</span> 2110</li>
-        <li><span>Nationality:</span> Filipino</li>
+        
       </ul>
     </div>
     <div class="details grid-item">
       <h1>About <span>Me</span></h1>
-      <p>Hi! I’m John Carlo, a 3rd-year Computer Science student at Gordon College. As someone passionate about technology, I’ve been fortunate enough to explore various aspects of software and web development while continuing to learn, especially in the field of Natural Language Processing (NLP). My journey as a student developer has been both challenging and rewarding, giving me the opportunity to turn my ideas into meaningful projects.</p>
+      <p>Hi! I’m John Carlo, a Computer Science student at Gordon College. As someone passionate about technology, I’ve been fortunate enough to explore various aspects of software and web development while continuing to learn, especially in the field of Natural Language Processing (NLP). My journey as a student developer has been both challenging and rewarding, giving me the opportunity to turn my ideas into meaningful projects.</p>
       <br>
       <p>I’ve always been fascinated by how technology can solve real-world problems, and this curiosity led me to delve deeper into programming. Balancing my academic responsibilities with my personal interests in coding, I’ve grown from working on small-scale school projects to more ambitious initiatives, such as building a chatbot for user support.</p>
       <br>

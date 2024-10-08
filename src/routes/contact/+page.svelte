@@ -25,20 +25,6 @@
           </a>
         </div>
         <div class="contact-item">
-          <a href="tel: +639673606059" class="btn btn-primary">
-            <i class="fas fa-phone"></i>
-            <p>PHONE</p>
-            <span>+63 (0) 9673 606059</span>
-          </a>
-        </div>
-        <div class="contact-item">
-          <a href="https://www.facebook.com/johncarlo.hizola.9/" class="btn btn-primary">
-            <i class="fa-brands fa-facebook"></i>
-            <p>FACEBOOK</p>
-            <span>Johncarlo Hizola</span>
-          </a>
-        </div>
-        <div class="contact-item">
           <a href="https://x.com/JohnHizola70295" class="btn btn-primary">
             <i class="fa-brands fa-twitter"></i>
             <p>TWITTER</p>
@@ -50,13 +36,6 @@
             <i class="fa-brands fa-github"></i>
             <p>GITHUB</p>
             <span>Hizola, John Carlo</span>
-          </a>
-        </div>
-        <div class="contact-item">
-          <a href="https://www.instagram.com/jc.hiz/" class="btn btn-primary">
-            <i class="fa-brands fa-square-instagram"></i>
-            <p>INSTAGRAM</p>
-            <span>jc.hiz</span>
           </a>
         </div>
       </div>
